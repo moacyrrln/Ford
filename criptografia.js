@@ -10,7 +10,7 @@ for (let i = 0; i <= 254; i++) {
 let criptografia = [];
 let validarCriptografia = 0;
 
-while(validarCriptografia > 0) {
+do {
   criptografia = [];
   validarCriptografia = 0;
   for (let i = 0; i <= 254; i++) {
@@ -25,18 +25,18 @@ while(validarCriptografia > 0) {
     if (validar[i] === validar[i+1]) validarCriptografia++;
   }
 }
+while(validarCriptografia > 0)
 
-console.log('criptografia', criptografia)
 
 let criptografado = []
 
 
 mensagemSplit.map(letra => {
-  console.log(letra);
-  console.log((listaDeCaracteres.indexOf(letra)));
   let posicao = (listaDeCaracteres.indexOf(letra));
-  console.log()
   criptografado.push(criptografia[posicao]);
+
 })
 
+
 console.log(criptografado);
+console.log(criptografado.join(''));
