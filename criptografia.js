@@ -1,4 +1,4 @@
-const mensagem = "FORD GI";
+const mensagem = "FORD GI TRYBE";
 const mensagemSplit = mensagem.split('');
 
 const listaDeCaracteres = [];
@@ -37,6 +37,6 @@ mensagemSplit.map(letra => {
 
 })
 
-
+console.log('mensagem: ', mensagem);
 console.log(criptografado);
-console.log(criptografado.join(''));
+console.log('criptografado:', criptografado.join(''));
